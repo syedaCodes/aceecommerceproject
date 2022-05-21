@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+header{
+  width: 100%;
+  background-color: #000;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper{
+  margin: 0 auto;
+  width: 90%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header,
+.wrapper{
+  padding: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header,
+.wrapper,
+.nav_menu--list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_logo h1{
+  font-weight: 700;
+  color: #fff;
+}
+.nav-menu{
+  width: 40%;
+}
+.nav_menu--list{
+  list-style: none;
+}
+.nav_menu--list li{
+  padding: .5rem 2rem;
+  cursor: pointer;
+}
+.nav_menu--list a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.form_container{
+  width: 50%;
+  margin: 0 auto;
+  min-height: 80vh;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_container--signin,
+.form_container--signup{
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+}
+.form_container--heading{
+  padding: .5rem 0;
+}
+.form_container--heading + small{
+  color: #777;
+  padding: .5rem 0;
+}
+.form_container--group{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.form_container--group label,
+.form_container--group input{
+  margin: .3rem 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form_container--group input{
+  padding: .9rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+}
+.btn{
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn:focus{
+  transform: translateY(3px);
+  transition: all .2s ease-in-out;
+}
+.btn + a{
+  padding: 1rem 0;
+  margin: 1rem 0;
+  display: block;
 }
